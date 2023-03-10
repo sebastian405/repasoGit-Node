@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "repaso git y node",
   "main": "app/index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "set NODE_ENV=developer& nodemon app/index.js --exec babel-node",
+    "qa": "set NODE_ENV=qa& nodemon app/index.js --exec babel-node",
+    "start": "set NODE_ENV=production& nodemon app/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
