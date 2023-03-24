@@ -14,6 +14,12 @@ route.get("/user", controller.findAllUser);
 route.get("/user/:id", controller.findUser);
 
 // INSERTA INFO
-route.post("/user/", controller.insertUser);
+route.post("/user", controller.insertUser);
+
+// ACTUALIZAR INFORMACION
+route.put("/user", controller.updateUser);
+
+// ELIMINAR INFORMACION
+route.delete("/user/:id", controller.deleteUser);
 
 export default route;
